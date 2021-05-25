@@ -9,7 +9,9 @@ let click = document.getElementById("action")
 // Next Button On Click
 document.getElementById("next-btn").onclick = function () {
   time = 3
-  document.getElementById("word").innerHTML = ""
+  document.getElementById("giphy").innerHTML = ""
+  document.getElementById('buttons').style.display = 'none'
+  document.getElementById('enter-box').style.display = ""
   document.getElementById("definition").innerHTML = ""
   document.getElementById("spell").value = ""
   document.getElementById("time-left").style.display = "block"
@@ -55,7 +57,7 @@ let getWord = function () {
             document.getElementById("inner_circle").innerHTML = ""
             document.getElementById("countdown").style.display = "none"
             document.getElementById("time-left").style.display = "none"
-            document.getElementById("buttons").style.display = ""
+  
           
 
             // Get Values
@@ -72,7 +74,7 @@ let getWord = function () {
 
             setTimeout(function () {
               document.getElementById("word").innerHTML = ""
-
+              document.getElementById("buttons").style.display = ""
 
             }, 1000)
           }
@@ -84,11 +86,14 @@ let getWord = function () {
     });
 };
 
-// When Next Button Is Clicked
+
+// When Enter Button Is Clicked
 document.getElementById("main-btn").onclick = function (event) {
  
 
   let results = document.getElementById("spell").value
+  document.getElementById('enter-box').style.display = "none"
+  
 
   // Word Comparison
   if (word.toLowerCase() === results.toLowerCase()) {
@@ -105,7 +110,7 @@ document.getElementById("main-btn").onclick = function (event) {
       })
       .then(function (response) {
         // console.log(response)
-        let grabGiphy = document.getElementById("word")
+        let grabGiphy = document.getElementById("giphy")
 
         var setGif = document.createElement("img")
         setGif.setAttribute('src', response.data.image_url)
@@ -137,7 +142,7 @@ document.getElementById("main-btn").onclick = function (event) {
     }
     document.getElementById("yourScore").innerHTML = "Your Score: " + userScore
 
-    let getX = document.getElementById("word")
+    let getX = document.getElementById("giphy")
 
 
     let setX = document.createElement("span")

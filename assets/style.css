@@ -284,6 +284,13 @@ html {
 #gamebox {
 	padding-bottom: 100px;
 }
+#circle {
+	margin-top: 15px;
+}
+
+#enter-box {
+margin-top: 100px;
+}
 
 #next-btn,
 #end-game {
@@ -412,9 +419,10 @@ html {
 }
 
 #word {
-	font-size: 35px;
+	font-size: 55px;
 	font-weight: bolder;
 	color: rgb(138, 44, 226);
+	margin-top: 100px;
 }
 
 #countdown {
