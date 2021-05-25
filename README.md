@@ -7,9 +7,10 @@ This repository contains a game called "Nerd Words".
 ![Image of Game Start Page](https://github.com/MLemke24/Nerd-Words/blob/main/assets/Screen%20Shot%202021-05-25%20at%2010.41.36%20AM.png)
 
 
-## Languages Used
+## Languages and Tools Used
 * HTML 
 * CSS
+* Bulma
 * JavaScript
 
 ## About This Project
