@@ -6,7 +6,7 @@ let word, definition, pronunciation, appear, time, createCircle
 let userScore = 0;
 let click = document.getElementById("action")
 
-// Next Button On Click
+// Next Button On Click ---> Reset html display elements
 document.getElementById("next-btn").onclick = function () {
   time = 3
   document.getElementById("giphy").innerHTML = ""
@@ -35,8 +35,6 @@ let getWord = function () {
         document.getElementById("start-game").style.display = "none"
         document.getElementById("countdown").style.display = "block"
         document.getElementById("gamebox").style.display = "block"
-       
-
 
         // 3 Second Timer
         time = 3;
@@ -45,9 +43,6 @@ let getWord = function () {
           time -= 1
 
           document.getElementById("inner_circle").innerHTML = time + "&nbsp";
-        
-          // console.log(time)
-          
 
           if (time <= 0) {
 
@@ -57,8 +52,6 @@ let getWord = function () {
             document.getElementById("inner_circle").innerHTML = ""
             document.getElementById("countdown").style.display = "none"
             document.getElementById("time-left").style.display = "none"
-  
-          
 
             // Get Values
             word = data[0].word
@@ -70,7 +63,6 @@ let getWord = function () {
 
             //  console.log(appear)
             appear.innerHTML = word
-       
 
             setTimeout(function () {
               document.getElementById("word").innerHTML = ""
@@ -89,11 +81,9 @@ let getWord = function () {
 
 // When Enter Button Is Clicked
 document.getElementById("main-btn").onclick = function (event) {
- 
 
   let results = document.getElementById("spell").value
   document.getElementById('enter-box').style.display = "none"
-  
 
   // Word Comparison
   if (word.toLowerCase() === results.toLowerCase()) {
@@ -131,12 +121,12 @@ document.getElementById("main-btn").onclick = function (event) {
 
 
     // IF  word was wrong
-  } else  {
+  } else {
 
 
     userScore -= 1; //downgrade score value with 1
     console.log(userScore)
-    if (userScore < 0){
+    if (userScore < 0) {
       userScore = 0
 
     }
@@ -158,18 +148,18 @@ document.getElementById("main-btn").onclick = function (event) {
         <p id="learn"> Pronunciation: ${pronunciation}</p>
         `
     grabDefinition.innerHTML = setDefinition
- 
-  
 
-}
+
+
+  }
 
 }
 
 document.getElementById("end-game").onclick = function () {
-document.getElementById("gamebox").style.display = "none"
-document.getElementById("log").style.display = "block"
+  document.getElementById("gamebox").style.display = "none"
+  document.getElementById("log").style.display = "block"
 
-document.getElementById("highScore").innerHTML = userScore
+  document.getElementById("highScore").innerHTML = userScore
 }
 
 // save ganme sacore and present score
@@ -187,17 +177,17 @@ function saveGame() {
 
 
   initials = document.getElementById("initials").value
-console.log(initials)
+  console.log(initials)
 
-if (initials <= 0){
-  window.alert("Must put in your Initials")
-  return;
-}
+  if (initials <= 0) {
+    window.alert("Must put in your Initials")
+    return;
+  }
 
   let logScores = JSON.parse(localStorage.getItem("yourScores")) || [];
 
   // push to array and save
-  let numbers = {Initials: initials, Score: highscore }
+  let numbers = { Initials: initials, Score: highscore }
   logScores.push(numbers)
   console.log(logScores)
 
@@ -232,8 +222,6 @@ function setScore(logScores) {
 
 };
 
-
-
 // Bring up high Scores Page
 
 function highscores() {
@@ -250,10 +238,9 @@ function highscores() {
 
 };
 
-document.getElementById("try").onclick = function() {
+document.getElementById("try").onclick = function () {
   getWord()
 }
-
 
 // next.addEventListener("click", getWord)
 click.addEventListener("click", getWord)
