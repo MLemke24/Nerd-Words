@@ -1,16 +1,15 @@
-# Group-10 
+# Nerd Words
 
 ## This Repository
-This repository contains a group project called "Nerd Words". 
+This repository contains a game called "Nerd Words". 
 
 ## Nerd Words
-![Image of Game Start Page](https://github.com/MLemke24/Group-10/blob/main/assets/screencapture-mlemke24-github-io-Group-10-2021-04-04-07_27_57%20(2).png)
+![Image of Game Start Page](https://github.com/MLemke24/Nerd-Words/blob/main/assets/Screen%20Shot%202021-05-25%20at%2010.41.36%20AM.png)
 
 
 ## Languages Used
 * HTML 
 * CSS
-* Bulma
 * JavaScript
 
 ## About This Project
@@ -22,12 +21,7 @@ This repository contains a group project called "Nerd Words".
 
 
 ## Link To Deployed Application 
-[Link To Game](https://mlemke24.github.io/Group-10/)
-
-
-
-![download (11)](https://user-images.githubusercontent.com/76184416/113340634-c41de800-92f1-11eb-812c-cfa6bb84c33d.png)
-
+[Link To Game](https://mlemke24.github.io/Nerd-Words/)
 
 ## Who
-(Harry, Anh, Matthew)
+Matt Lemke
