@@ -227,6 +227,7 @@ function setScore(logScores) {
 function highscores() {
 
   document.getElementById("action").style.display = "none"
+  document.getElementById('page-1').style.display = 'none'
 
   document.getElementById("finale").style.display = "block"
 
