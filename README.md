@@ -1,28 +1,51 @@
 # Nerd Words
 
-## This Repository
-This repository contains a game called "Nerd Words". 
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-## Nerd Words
-![Image of Game Start Page](https://github.com/MLemke24/Nerd-Words/blob/main/assets/Screen%20Shot%202021-05-25%20at%2010.41.36%20AM.png)
+## Description
+
+Interactive Javascript Game
+
+Nerd Words tests your visual memorization while expanding your vocabulary in a fun and relaxing way! This game challenges you to only see a word for 1 second, then spell that word you just saw.
+
+## Table of Contents
+  - [Deployed-Application](#Deployed)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
+
+## Deployed Application
+
+[Link To Deployed Game](https://mlemke24.github.io/Nerd-Words/)
 
 
-## Languages and Tools Used
-* HTML 
-* CSS
-* Bulma
-* JavaScript
+## Usage 
 
-## About This Project
-* When you click start a 3 second timer will begin
-* At the end of that timer, a word will pop up for 1 second. 
-* You must then use the input box to spell the word correclty. 
-* If you spell it right, you get a point
-* If you spell it wrong, you get a point taken away.
+### - Javascript
+### - Bulma 
+### - CSS
+### - HTML
+
+## Future Development & Ways to Contribute
+
+* Mobile Responsiveness coming in version 2!
+* Levels to make the words harder or easier
+* Timer on hard mode to make you spell the word in a more timely manner
+
+## License
+
+[GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0)
 
 
-## Link To Deployed Application 
-[Link To Game](https://mlemke24.github.io/Nerd-Words/)
 
-## Who
-Matt Lemke
+## Contact
+
+[Matthew Lemke](https://github.com/MLemke24)
+ 
+You can submit any questions by emailing me at:
+
+<a href="mailto:matthewlemke@gmail.com?"><img src="https://img.shields.io/badge/gmail-%23DD0031.svg?&style=for-the-badge&logo=gmail&logoColor=white"/></a>
+

@@ -459,11 +459,20 @@ color: rgb(138, 44, 226);
 /* Mobile Responsiveness */
 
 @media screen and (max-width: 980px){
+	html {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+	}
 	nav {
-		max-width: 60%;
+		max-width: 100%;
 	}
 	.navbar-end {
 		margin-left: 0;
+	}
+	#action{
+		margin-right: 15px;
 	}
 }
 @media screen and (max-width: 575px) {
