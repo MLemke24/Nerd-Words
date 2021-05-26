@@ -8,6 +8,9 @@ Interactive Javascript Game
 
 Nerd Words tests your visual memorization while expanding your vocabulary in a fun and relaxing way! This game challenges you to only see a word for 1 second, then spell that word you just saw.
 
+## Homepage
+![Image of Nerd Words Homepage(https://github.com/MLemke24/Nerd-Words/blob/main/assets/Screen%20Shot%202021-05-25%20at%2010.41.36%20AM.png)
+
 ## Table of Contents
   - [Deployed-Application](#Deployed)
   - [Usage](#usage)
